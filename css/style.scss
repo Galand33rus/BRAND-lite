@@ -316,6 +316,7 @@ body {
 	width: 360px;
 	background: #F8F8F8;
 	margin-bottom: 30px;
+	padding: 0 1%;
 	&:hover .block__img {
 		filter: brightness(50%);
 	}
@@ -327,6 +328,7 @@ body {
 		text-decoration: none;
 	}
 	&__img {
+		width: 100%;
 		transition: filter .2s;
 	}
 	&__info {
@@ -558,8 +560,17 @@ body {
 	}
 }
 
+@media screen and (min-width:1001px) and (max-width: 1130px) {
+	.offer__img	{
+		width: 232px;
+		&-grow {
+			width: 100%;
+		}
+	}
+}
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1000px) {
 
 	.heading {
 		&__img {

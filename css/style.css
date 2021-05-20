@@ -386,6 +386,7 @@ body {
   width: 360px;
   background: #F8F8F8;
   margin-bottom: 30px;
+  padding: 0 1%;
 }
 
 .block:hover .block__img {
@@ -403,6 +404,7 @@ body {
 }
 
 .block__img {
+  width: 100%;
   -webkit-transition: -webkit-filter .2s;
   transition: -webkit-filter .2s;
   transition: filter .2s;
@@ -735,7 +737,16 @@ body {
   background-color: #f16d7f;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1001px) and (max-width: 1130px) {
+  .offer__img {
+    width: 232px;
+  }
+  .offer__img-grow {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .heading__img {
     background-image: url("../img/bg4.png");
     min-height: 362px;
